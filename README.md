@@ -38,7 +38,7 @@ Example:
     "dependencies": [               --> dependent commands. Here, COMMAND 3 will be dispatched for execution only
      "COMMAND 1",                       if COMMAND_1 and COMMAND_2 have finished execution
      "COMMAND 2"
-    ]   
+    ]
 }
 
 COMMAND class (to store a command in a HashMap)
