@@ -1,0 +1,9 @@
+{
+    "command_name": "COMMAND 1",
+    "command_id": 1,
+    "service": "ls",
+    "exec_time" : 20000,
+    "dependencies": [
+
+    ] 
+}

@@ -1,0 +1,9 @@
+{
+    "command_name": "COMMAND 2",
+    "command_id": 2,
+    "service": "ps",
+    "exec_time" : 30000,
+    "dependencies": [
+
+    ] 
+}

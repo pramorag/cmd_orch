@@ -1,0 +1,9 @@
+{
+    "command_name": "COMMAND 5",
+    "command_id": 5,
+    "service": "clear",
+    "exec_time" : 25000,
+    "dependencies": [
+     "COMMAND 6"
+    ]
+}

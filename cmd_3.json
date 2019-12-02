@@ -1,0 +1,10 @@
+{
+    "command_name": "COMMAND 3",
+    "command_id": 3,
+    "service": "tty",
+    "exec_time" : 40000,
+    "dependencies": [
+     "COMMAND 1",
+     "COMMAND 2"
+    ]
+}

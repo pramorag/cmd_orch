@@ -1,0 +1,74 @@
+pramod@ubuntu:~/java_test/spirent$ java cmd_orch_status 
+This thread is : Command Orchestrator status query thread
+Connected to localhost/127.0.0.1:8001
+(-----> command 1 is over, 2 and 4 are running and 3&5 have dependencies)
+<================= Status output begin =================>
+Running commands: 2
+	 Command: is COMMAND 4, id is 4
+	 Command: is COMMAND 2, id is 2
+Pending commands: 2
+	 Command: is COMMAND 5, id is 5
+	 Command: is COMMAND 3, id is 3
+Completed commands: 1
+	 Command: is COMMAND 1, id is 1
+<================= Status output end ===================>
+
+pramod@ubuntu:~/java_test/spirent$ java cmd_orch_status 
+This thread is : Command Orchestrator status query thread
+Connected to localhost/127.0.0.1:8001
+<================= Status output begin =================>
+Running commands: 1
+	 Command: is COMMAND 2, id is 2
+Pending commands: 2
+	 Command: is COMMAND 5, id is 5
+	 Command: is COMMAND 3, id is 3
+Completed commands: 2
+	 Command: is COMMAND 4, id is 4
+	 Command: is COMMAND 1, id is 1
+<================= Status output end ===================>
+
+pramod@ubuntu:~/java_test/spirent$ java cmd_orch_status 
+This thread is : Command Orchestrator status query thread
+Connected to localhost/127.0.0.1:8001
+<================= Status output begin =================>
+Running commands: 1
+	 Command: is COMMAND 3, id is 3
+Pending commands: 1
+	 Command: is COMMAND 5, id is 5
+Completed commands: 3
+	 Command: is COMMAND 4, id is 4
+	 Command: is COMMAND 2, id is 2
+	 Command: is COMMAND 1, id is 1
+<================= Status output end ===================>
+
+pramod@ubuntu:~/java_test/spirent$ java cmd_orch_status 
+This thread is : Command Orchestrator status query thread
+Connected to localhost/127.0.0.1:8001
+(-----> command 1,2,4 are over, 3 is running and 5 has dependencies)
+<================= Status output begin =================>
+Running commands: 1
+	 Command: is COMMAND 3, id is 3
+Pending commands: 1
+	 Command: is COMMAND 5, id is 5
+Completed commands: 3
+	 Command: is COMMAND 4, id is 4
+	 Command: is COMMAND 2, id is 2
+	 Command: is COMMAND 1, id is 1
+<================= Status output end ===================>
+
+pramod@ubuntu:~/java_test/spirent$ java cmd_orch_status 
+This thread is : Command Orchestrator status query thread
+Connected to localhost/127.0.0.1:8001
+(----> command 5 never runs are dependency is not resolved)
+<================= Status output begin =================>
+Running commands: 0
+Pending commands: 1
+	 Command: is COMMAND 5, id is 5
+Completed commands: 4
+	 Command: is COMMAND 4, id is 4
+	 Command: is COMMAND 3, id is 3
+	 Command: is COMMAND 2, id is 2
+	 Command: is COMMAND 1, id is 1
+<================= Status output end ===================>
+
+
